@@ -1,0 +1,25 @@
+server:
+  port: 8080
+  servlet:
+    context-path=:
+
+logging:
+  level:
+    org.springframework: INFO
+    com.blipay: DEBUG
+
+factors:
+  age: 0.5
+  temp: 5.0
+  income:
+    multiplier: 2.0
+    divider: 100
+
+minimum:
+  score: 200
+
+weather:
+  api:
+    key: "56aac45c2ad657ce2650e86f2391530c"
+    url: "http://api.openweathermap.org/data/2.5/weather"
+  default.temperature: 30.0
